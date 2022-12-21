@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=1280" />
+  <title>Mario </title>
+  <link rel="stylesheet" type="text/css" href="mario.css">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+
+<body>
+
+    
+         <div id="mySidebar" class="sidebar">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+             <a href="game.html"> Flapper Game</a>
+             <a href ="https://leaderboardhq.com/8bj5ebhx"> Leaderboard for Flapper Game</a>
+             <a href="index.html"> Packer Game</a>
+             <a href="shop.html"> Santa's Shop</a>
+             <a href="home.html"> Home</a>
+             <a href="https://boulderbugle.com/qhrxvzs3"> About</a>
+            <a href="https://www.youtube.com/channel/UCClPFucw2lh043sY2jyaeDQ"> Donate</a>
+          </div>
+
+      <div id="main">
+         <button class="openbtn" onclick="openNav()">☰ Open  Sidebar</button>
+      </div>
+
+      <script>
+          function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+      function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+      </script>
+      
+      
+  <div class="main-wrapper">
+    <canvas class="game-screen"></canvas>
+  </div>
+  
+  
+      <audio loop id="audio">
+      <source src="mario.mp3" type="audio/mp3">
+    </audio>
+        <script>
+          var audio = new Audio("mario.mp3")
+          document.onclick = function() {
+          audio.play();
+          myAudio.volume = 0.4;
+
+          }
+        </script>
+        
+ 
+      
+        
+  <script src="View.js"></script>
+  <script src="GameUI.js"></script>
+
+  <script src="GameSound.js"></script>
+  <script src="Element.js"></script>
+  <script src="PowerUp.js"></script>
+  <script src="Enemy.js"></script>
+  <script src="Bullet.js"></script>
+  <script src="Mario.js"></script>
+  <script src="Score.js"></script>
+  <script src="MarioGame.js"></script>
+
+  <script src="Storage.js"></script>
+  <script src="Editor.js"></script>
+  <script src="CreatedLevels.js"></script>
+
+  <script src="MarioMaker.js"></script>
+
+  <script src="Preloader.js"></script>
+
+</body>
+
+</html>

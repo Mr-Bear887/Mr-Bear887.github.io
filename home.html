@@ -1,0 +1,77 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flapper 2.0</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Flapper Game</h1>
+ 
+  
+  
+         <div id="mySidebar" class="sidebar">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+             <a href="game.html"> Flapper Game</a>
+             <a href ="https://leaderboardhq.com/8bj5ebhx"> Leaderboard for Flapper Game</a>
+             <a href="index.html"> Packer Game</a>
+             <a href="shop.html">Santa's Shop</a>
+             <a href="mario.html"> Mario</a>
+             <a href="https://boulderbugle.com/qhrxvzs3"> About</a>
+            <a href="https://www.youtube.com/channel/UCClPFucw2lh043sY2jyaeDQ"> Donate</a>
+          </div>
+
+      <div id="main">
+         <button class="openbtn" onclick="openNav()">☰ Open  Sidebar</button>
+      </div>
+
+      <script>
+          function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+      function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+      </script>
+
+
+  
+  
+  
+
+   
+    <input id="myText" placeholder="Nickname" class="nickname">
+    <br>
+    <a href ="game.html" type="button" id ="myButton" class="button">Play</a>
+      <script>
+        document.getElementById("myButton").onclick = function(){
+
+    var name = document.getElementById("myText").value;
+    alert("Hello, " + name + " are you ready" +  "?" + " Press ok if you are" + "!");
+         }
+      </script>
+    
+
+      <audio loop id="audio">
+      <source src="home.mp3" type="audio/mp3">
+    </audio>
+        <script>
+          var audio = new Audio("home.mp3")
+          document.onclick = function() {
+          audio.play();
+          myAudio.volume = 0.4;
+
+          }
+        </script>
+        
+        
+
+
+
+  </body>
+</html>

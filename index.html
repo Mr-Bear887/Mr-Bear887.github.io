@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+      
+
+        <div id="lives"></div>
+
+        <button id="help-button" onclick="var dialog = document.getElementById('help-dialog'); dialog.style.display = 'block';">HELP</button>
+        
+          
+         <div id="mySidebar" class="sidebar">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+             <a href="index.html"> Flapper Game</a>
+              <a href ="https://leaderboardhq.com/8bj5ebhx"> Leaderboard for Flapper Game</a>
+             <a href="shop.html"> Santa's Shop</a>
+             <a href="mario.html">Mario</a>
+             <a href="home.html"> Home</a>
+             <a href="https://boulderbugle.com/qhrxvzs3"> About</a>
+            <a href="https://www.youtube.com/channel/UCClPFucw2lh043sY2jyaeDQ"> Donate</a>
+          </div>
+
+      <div id="main">
+         <button class="openbtn" onclick="openNav()">☰ Open  Sidebar</button>
+      </div>
+
+      <script>
+          function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+      function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+      </script>
+      
+
+        <div id="help-dialog" class="dialog">
+            <h2>CONTROLS</h2>
+
+            <p>WASD: Use W/S to move forward/backward and A/D to turn left/right.</p>
+
+            <p>After you collect all of the dots, the game will start over but pacman and the ghosts will get a little bit faster!<p>
+              
+            <p> Click the page if you want music to start playing! Also this game extremly hard when you get to level 3 :)</p>
+
+            <button onclick="var dialog = document.getElementById('help-dialog'); dialog.style.display = 'none';">Close</button>
+        </div>
+        
+        <audio loop id="audio">
+      <source src="home.mp3" type="audio/mp3">
+    </audio>
+        <script>
+          var audio = new Audio("packman.mp3")
+          document.onclick = function() {
+          audio.play();
+
+          }
+        </script>
+        
+        <button id="restart-button" onClick="window.location.reload();">Restart</button>
+
+
+        <script src="three.js"></script>
+        <script src="helvetiker_regular.typeface.js"></script>
+        <script src="games.js"></script>
+    </body>
+</html>
+
